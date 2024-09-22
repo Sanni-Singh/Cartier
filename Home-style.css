@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    /* max-width:1920px; */
+}
+.header{
+    width: 100%;
+    border-bottom: 1px solid #cdc8c8;
+
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+        
+        .heading-box1{
+            display: flex;
+        }
+        .burger{
+            display: flex;
+            gap: 1.5rem;
+            .bug-1{
+                width: 20px;
+                height:0px;
+            }
+            @media screen and (min-width:800px){
+                display: none;
+            }
+        }
+        .heading-box1 ol{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            li{
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: #484444;
+                    position: relative;
+                }
+                a:hover{
+                    color: #a39f9f;
+                }
+                a::before{
+                    content: '';
+                    position: absolute;
+                    bottom:-1px;
+                    left: 0;
+                    width: 0;
+                    height: 0.5px;
+                    background-color: #5e5b5b;
+                    transition: all .7s;
+                }
+                a:hover::before{
+                    width: 100%;
+                }
+                
+                @media screen and (max-width:800px){
+                    display: none;
+                }
+            }
+        }
+
+        .cartier-logo{
+            margin-right: 220px;
+            margin-top: 10px;
+            width: 150px;
+            height: 2rem;
+
+            img {
+                width: 100%;
+            }
+            
+            @media screen and (max-width:800px){
+                /* margin-right: 0px; */
+                margin-right: 220px;
+                margin-top: 0px;
+                max-width: 100px;
+                height: 1rem;
+            }
+        }
+        .heading-box3{
+            display: flex;
+            gap: 10px;
+
+            @media screen and (max-width:800px){
+                display: none;
+            }
+        }
+    }
+
+    .nav{
+        width: 90%;
+        height: 6rem;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+
+        ol{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: #484444;
+                    position: relative;
+                }
+                a:hover{
+                    color: #000;
+                    font-weight: 900;
+                    transition: all  .7s;
+                }
+                a::before{
+                    content: '';
+                    position: absolute;
+                    bottom:-7px;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
+                    background-color: #D50032;
+                    transition: all  .7s;
+                }
+                a:hover::before{
+                    width: 100%;
+                }
+            }
+            .hr{
+                width: 1px;
+                height: 1.5rem;
+                border-right: 1px solid black;
+                background-color: red;
+            }
+        }
+        @media screen and (max-width:800px){
+            display: none;
+        }
+    }
+    
+    
+
+}
+
