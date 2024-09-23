@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+
+}
+
+body, h1, h3,h4 {
+    font-family: "Brilliant Cut Pro Medium", sans-serif;
+}
+.section-1 {
+    display: flex;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 10%;
+    gap: 10px;
+    p {
+        width: 63%;
+    }
+  }
+
+  .navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 20px 60px;
+
+    li {
+        display: inline-block;
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: black;
+            /* position: relative; */
+            transition: color 0.3s ease;
+        }
+        
+    }
+  }
+  .navbar a::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: black; 
+    width: 100%;
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+.navbar a:hover::after {
+    transform: scaleX(1); 
+    transform-origin: left;
+}
+.navbar a::after {
+    transform-origin: left; 
+}
+
+  .last {
+    padding-left: 20px;
+    vertical-align: -20%;
+  }
+.sidenav {
+    display: flex;
+}
+  
+  .sidenav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  }
+  .sidenav-grid {
+    display: flex;
+    margin: 0 10px;
+  }
+
+  .sidenav-feed {
+    display: flex;
+    margin: 0 10px;
+    input {
+        accent-color: black;
+    }
+  }
+  .sidenav a::after {
+    content: none;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "aside main";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.custom-hr {
+    border-top: 1px solid grey;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    margin-left: 57px;    
+    margin-right: 105px;
+}
+
+.aside {
+    grid-area: aside;
+    margin-top: 5px;
+    position: sticky; /* Make the aside sticky */
+    top: 0; /* Stick to the top */
+    height: fit-content; /* Adjust height */
+    /* z-index: 1; */
+}
+.aside-details{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 57px;
+    gap: 10px; 
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    
+} 
+
+.aside-details h3 {
+    margin-top: -10px;
+}
+.aside-details input[type="radio"] {
+    margin-right: 15px; 
+    appearance: none; 
+    width: 15px; 
+    height: 15px; 
+    border: 1px solid black; 
+    border-radius: 50%; 
+    position: relative; 
+}
+
+.aside-details input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 7px; /* Dot size */
+    height: 7px; /* Dot size */
+    background-color: black;
+    border-radius: 50%; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.aside-details input[type="radio"]:focus {
+    outline: none; 
+}
+
+.aside-details input[type="checkbox"] {
+    margin-right: 15px;
+    accent-color: black;
+}
+.main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 25px;
+    height: auto;
+}
+
+.watch-text {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+    padding-left: 45px;
+    span {
+        margin-left: 21%;
+    }
+    h4 {
+        margin-left: 40px;
+    }
+    p {
+        margin-left: 10px;
+    }
+}
+.price {
+    margin-right: 70px;
+    text-align: center;
+}
+
+.watch-text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    .para {
+        margin-left: 20px;
+    }
+}
+
+.watch {
+    height: 550px;
+}
+.watch img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px;
+    max-height: 350px; /* Set a max height for consistency */
+    object-fit: cover; /* Crop the image to fit the container */
+}
+
+.watch:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.add-to-bag {
+    display: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px;
+    margin-top: 20px ; /* Add space above */
+    font-weight: bold; /* Make it bold */
+}
+
+.watch:hover .add-to-bag {
+    display: block; /* Show on hover */
+}
+
+.add-to-bag:hover {
+    color: #000;
+    background-color: white;
+    border: 1px solid black;
+}
