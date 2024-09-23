@@ -1,0 +1,201 @@
+html{
+  line-height: 1.5;
+}
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1920px;
+  color: #1d1c1c;
+}
+
+header{
+  height: 158px;
+  width: 100%;
+  overflow-y:hidden;
+  overflow-x: hidden;
+  
+}
+
+.banner{
+  display: flex;
+  background-color: #F9F9F9;
+}
+
+#banner-image{
+  width: 50%;
+
+  img{
+      width: 100%;
+  }
+
+}
+
+#banner-text{
+  width: 50%;
+  padding: 50px 120px;
+  h2{
+    font-size: 55px;
+  }
+}
+
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 40px;
+  div{
+    display: flex;
+    gap: 10px;
+  }
+}
+
+#main-section{
+  display: flex;
+  margin: 0 2%;
+  max-width: 100%; 
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-right: 30px;
+  gap: 10px;
+
+
+}
+.choice{
+  padding-bottom: 10px;
+  color: #1d1c1c;
+  letter-spacing: 0.258rem;
+
+  h3{
+      font-size: 0.9rem;
+      padding: 20px;
+      font-weight: 900;
+  }
+
+  .ip {
+      padding-bottom: 5%;
+  }
+
+  label:hover{
+      cursor: pointer;
+      text-decoration: underline;
+  }
+}
+
+
+.grid-tiger{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.grid-layout{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2%;
+  gap: 5px;
+  
+}
+
+.card {
+  position: relative;
+  max-width: 100%;
+  max-height: fit-content;
+  background-color: #f9f9f9;
+  padding: 15px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  cursor: pointer;
+  /* transition: all 0.3s ease-in; */
+
+  .jewell-img{
+      padding-bottom: 15px;
+  }
+
+  .jewell-img{
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+
+
+      img{
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
+          
+      }
+  } 
+  
+  
+
+  .card-text{
+      text-align: center;
+      h4{
+          margin: 0 auto;
+          width: 70%;
+      }
+      p{
+          /* letter-spacing: 0.158rem; */
+          /* font-size: 1.1rem; */
+      }
+  }
+
+  .btn{
+      position: static;
+      background-color: rgb(32, 32, 32);
+      color: white;
+      padding: 5%;
+      margin-top: 1.2rem;
+      height: 35px;
+      width: 100%;
+      text-align: center;
+      visibility: hidden; /* Keeps space while hiding the button */
+      opacity: 0; /* Initial opacity set to 0 */
+      cursor: pointer;
+      transition: visibility 0s, opacity 0.5s ease; /* Transition visibility and opacity */
+  }
+
+  .btn:hover{
+      background-color: white;
+      border: 1px solid #1d1c1c;
+      color: #1d1c1c;
+  }
+}
+
+.card:hover{
+  border: 1px solid rgb(155, 154, 154);
+  .btn{
+      visibility: visible;
+      opacity: 1;
+  }
+}
+
+.tiger{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+   img{
+      width: 12%;
+      height: 100%;
+      align-self: center;
+   }
+
+}
+
+footer{
+  height: 300px;
+}
