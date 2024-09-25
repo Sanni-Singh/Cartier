@@ -220,6 +220,22 @@ header{
     }
 }
 
+@media screen and (max-width: 560px){
+    .deepika{
+        display: flex;
+        flex-direction: column;
+
+        .two-pictures{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .banner-text{
+        text-align: center;
+    }
+}
+
 footer{
     /* height: 300px; */
     width: 100%;
