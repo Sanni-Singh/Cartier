@@ -11,6 +11,11 @@ body{
     max-width:1920px;
 }
 
+/* Start copping from herer till last */
+
+
+
+/* ------------------------------------------------------ */
 .header{
     width: 100%;
     border-bottom: 1px solid #cdc8c8;
@@ -124,8 +129,6 @@ body{
         justify-content: center;
         font-size: 12px;
         align-items: center;
-        /* position: sticky; */
-        /* overflow-x: hidden; */
 
         ol{
             
@@ -329,6 +332,7 @@ form{
     width: 50px;
     gap: 1.5rem;
     display: none;
+    z-index: 999;
     
     img{
         width: 30px;
@@ -417,63 +421,3 @@ form{
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 }
-
-
-.navv.show {
-    display: flex; /* Show when toggled */
-    flex-direction: column;
-    transform: translateX(0); /* Slide in effect */
-}
-
-.navv li {
-    list-style: none;
-    padding: 16px 0;
-}
-
-.navv li .ankar {
-    color: #000;
-    text-decoration: none;
-    display: block;
-}
-
-.navv li .ankar:hover {
-    border: 1px solid #fff;
-    padding: 10px 20px;
-}
-
-.icon .bar {
-    background-color: #fff;
-}
-
-.icon #bar1 {
-    transform: translateY(4px) rotate(-45deg);
-}
-
-.icon #bar3 {
-    transform: translateY(-6px) rotate(45deg);
-}
-
-.icon #bar2 {
-    opacity: 0;
-}
-
-.change {
-    transform: translateX(0);
-    height: 100vh;
-    margin: 0;
-    position: absolute;
-    font-size: 30px;
-    top: 0;
-    left: 0;
-    z-index: -100;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 3s ease;
-
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-} */
-
