@@ -481,7 +481,7 @@ body{
                 }
 
                 input:focus{
-                    border: none;
+                    outline: none;
                 }
                 button{
                     padding: 10px;
