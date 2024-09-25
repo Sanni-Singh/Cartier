@@ -13,7 +13,7 @@ body{
 .header{
     width: 100%;
     border-bottom: 1px solid #cdc8c8;
-    /* position: relative; */
+    position: relative;
 
     .heading{
         width: 90%;
@@ -116,7 +116,9 @@ body{
         justify-content: center;
         font-size: 12px;
         align-items: center;
-        /* position: fixed; */
+        top: 0;
+        z-index: 999;
+        position: sticky;
         /* overflow-x: hidden; */
 
         ol{
