@@ -191,6 +191,8 @@ body{
     margin-bottom: 150px;
     align-items: center;
 
+    z-index: 999;
+
     
 }
 
