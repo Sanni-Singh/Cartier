@@ -27,7 +27,7 @@ Clone of Cartier Website 😉 [Click Here](https://sanni-singh.github.io/Cartier
 
 ## :medal_sports:<span style="color:#29c4f6"> INTRODUCTION
 
-<i>"Welcome to the Formula 1 Website Clone project! The Cartier Website Clone is a front-end web development project aimed at replicating the design and functionality of the official Cartier website. This project was developed as part of a major assignment for Geekster, involving a team of six members, focusing on creating a responsive and user-friendly interface. The goal was to showcase modern web development practices using HTML, CSS, and JavaScript, while maintaining the elegant and minimalistic aesthetic of the original Cartier site. The clone serves as a learning experience in responsive design, cross-browser compatibility, and collaboration within a team setting.
+<i>"Welcome to the Cartier Website Clone project! The Cartier Website Clone is a front-end web development project aimed at replicating the design and functionality of the official Cartier website. This project was developed as part of a major assignment for Geekster, involving a team of six members, focusing on creating a responsive and user-friendly interface. The goal was to showcase modern web development practices using HTML, CSS, and JavaScript, while maintaining the elegant and minimalistic aesthetic of the original Cartier site. The clone serves as a learning experience in responsive design, cross-browser compatibility, and collaboration within a team setting.
 
 Throughout this README file, you'll find details on how to install and run the project locally, instructions on exploring the cloned website, guidelines for contributing to the project, and information about the project's licensing.
 
