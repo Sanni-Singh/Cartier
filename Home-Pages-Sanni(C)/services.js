@@ -2,7 +2,7 @@ function onClickMenu(){
     console.log("hmelllo poolice");
     document.getElementById("menu").classList.toggle("icon");
     console.log("hmelllo poolice");
-    document.getElementById("nav").classList.toggle("change");
+    document.getElementById("navv").classList.toggle("change");
 
 }
 // const element = document.getElementById("stikyNavbar")
