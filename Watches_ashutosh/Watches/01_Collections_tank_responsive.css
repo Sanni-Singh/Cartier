@@ -15,6 +15,7 @@
     .text p {
         text-align: justify;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -37,6 +38,34 @@
         display: none; 
     }
 }
+
+@media (max-width: 350px) {
+    .sidenav-grid {
+        padding-left: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .oneline {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .oneline{
+        ul {
+            padding-right: 0px;
+            font-size: 12px;
+        }
+
+        li {
+            padding: 0 5%;
+            margin: 0 10px;
+        }
+    }
+}
+
 
 @media (max-width: 768px) {
     
@@ -61,7 +90,7 @@
   }
 
   
-  @media (max-width: 640px) { 
+  @media (max-width: 768px) { 
     .aside {
         display: none;
         padding: 10px;
@@ -75,34 +104,59 @@
     }
   }
 
-  @media (max-width: 768px) { /* Adjust the max-width as necessary */
+  @media (max-width: 768px) { 
     .tig {
-        margin-left: 0; /* Remove left margin */
-        margin-right: auto; /* Center horizontally */
-        margin-left: auto; /* Center horizontally */
-        width: 100%; /* Make it take full width */
-        padding: 0 10px; /* Optional: add some padding */
+        margin-left: 0;
+        margin-right: auto; 
+        margin-left: auto; 
+        width: 100%; 
+        padding: 0 10px;
     }
 }
  
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .youtube-wrapper {
+        grid-column: 4;
+        grid-row: 4; 
+    }
+
+    .youtube-wrapper2 {
+        grid-column: 2;
+        grid-row: 2; 
+    }
+}
+
+@media (max-width: 768px) { 
     .oneline {
-        display: block;
-        width: auto;
+        transform: translate(-7%);
+    }
+    .main-content {
+        grid-template-columns: 1fr; 
+        transform: translateX(-23%);
+    }
+
+    .youtube-wrapper {
+        grid-column: 1 / -1; 
+        margin-bottom: 10px; 
+    }
+    .youtube-wrapper2 {
+        grid-column: 1 / -1; 
+        margin-bottom: 10px; 
+    }
+
+    .watch-large {
+        grid-column: 1 / -1;
+        margin-top: 5px;
+    }
+
+    .watch {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    .text {
+        width: 100%; 
+        padding: 5px; 
     }
 }
-
-@media (max-width: 500px) {
-    .oneline{
-        ul {
-            padding-right: 60px;
-        }
-
-        li {
-            padding: 0 5%;
-            margin: 0 10px;
-        }
-    }
-}
-
 
