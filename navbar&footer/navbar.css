@@ -186,6 +186,7 @@ body{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-color: #fff;
     display: flex;
+    /* margin: 0 auto; */
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 150px;
@@ -200,6 +201,7 @@ body{
     width: 60%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
