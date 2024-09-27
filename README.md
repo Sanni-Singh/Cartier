@@ -39,6 +39,28 @@ This project was assigned by <a href="#"><u>Geekster</u></a> as a Major Project 
 
 :gift: It was an exciting opportunity for all of us to apply our skills and collaborate with each other to create a polished website.:earth_asia:
 
+## :artificial_satellite:<span style="color:#29c4f6">FEATURES
+ ####  <span style="color:#ef00ff">1. Responsive Design:
+<ul>The website is responsive to different screen sizes and devices, providing a seamless experience for users on desktops, tablets, and mobile devices.</ul>
+
+ ####  <span style="color:#ef00ff">2. Navigation Menu:
+<ul>Implemented an intuitive and well-organized navigation menu to help users easily explore different sections of the website.</ul>
+
+ ####  <span style="color:#ef00ff">3. Product Listings:
+<ul>Displays clear images, concise descriptions, and relevant information about teams and latest winners.</ul>
+
+####  <span style="color:#ef00ff">4. Product Pages:
+<ul>individual pages with detailed information about distinct contexts, schedule, and live timing in order to stay updated.</ul>
+
+ #### <span style="color:#ef00ff">5. User Accounts:
+<ul>Provides the option for users to create accounts, allowing them to stay tuned about players, save preferences, and streamline the gaming process.</ul>
+
+####  <span style="color:#ef00ff">6. Social Media Integration:
+<ul>Integrated social media buttons to encourage users to follow the brand on social platforms.</ul>
+
+####  <span style="color:#ef00ff">7. Footer:
+<ul>A footer containing essential links of partners associated with the F1, rules and regulations, tickets and other relevant information.</ul>
+
 
 ## :computer:<span style="color:#29c4f6">TECHNOLOGIES  
 [![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
@@ -65,6 +87,45 @@ This project was assigned by <a href="#"><u>Geekster</u></a> as a Major Project 
 <ul>Google Fonts is a free and extensive collection of web fonts that allows developers to easily integrate diverse and visually appealing fonts into their websites. With a simple inclusion of a link or stylesheet in the HTML, users can access a wide range of fonts hosted by Google.</ul>
 
 <ul>Google Icons, on the other hand, are typically referenced from the Material Design Icons library. These are vector icons that can be easily customized and scaled for use in web and mobile applications. Developers can integrate these icons into their projects by including the appropriate link or script in the HTML.</ul>
+
+
+## :calling:<span style="color:#29c4f6">INSTALLATION 
+To get started with this website clone, follow these steps:
+<ol>
+<li>Install Visual Studio Code for coding.
+<li> Clone git Repository.
+<li> Open Project Directory.
+<li> Open VS Code.
+<li> Open the project folder.
+<li><b>Start the Application : </b> Open the index.html file in your web browser or use a local development server if you have one configured.
+<li>The application should now be running locally rendering HTML, CSS and JavaScript.
+</ol>
+
+
+## :roller_coaster:<span style="color:#29c4f6">CHALLENGES :runner:
+Throughout the development of our project, our team encountered various challenges and obstacles. Here, we document some of the major issues we faced:
+
+#### <span style="color:#ef00ff">1. COMMUNICATION :smile:
+<ul>Coordinating tasks, updates, and changes among team members requires effective communication to ensure everyone is on the same page. </ul>
+
+#### <span style="color:#ef00ff">2. CONSISTENCY :confused:
+<ul> Maintaining consistency in coding styles, naming conventions, and overall structure is crucial. </ul>
+
+#### <span style="color:#ef00ff">3. VERSION CONTROL :sunglasses:
+<ul> Handling version control with tools like Git helps prevent conflicts and allows for collaboration, but it requires careful management to avoid code conflicts. </ul>
+
+#### <span style="color:#ef00ff">4. BROWSER COMPATIBILITY :smiley:
+<ul> Ensuring the website functions correctly across different browsers can be challenging due to varying levels of support for HTML, CSS, and JavaScript features.
+ </ul>
+
+#### <span style="color:#ef00ff">5. RESPONSIVENESS :cyclone:
+<ul>  Creating a responsive design that works well on different devices and screen sizes requires careful planning and testing. </ul>
+
+#### <span style="color:#ef00ff">6. TESTING AND DEBUGGING :relieved:
+<ul>Rigorous testing and debugging are necessary to identify and fix issues promptly </ul>
+
+
+## :airplane:<span style="color:#29c4f6">WEBSITE UI 
 
 ## Mentor
 
