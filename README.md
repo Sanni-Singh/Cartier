@@ -166,20 +166,38 @@ Throughout the development of our project, our team encountered various challeng
 ## :airplane:<span style="color:#29c4f6">WEBSITE UI 
 
 #### 1. HOME PAGE UI
-
+![screenshot 1](./00_screenshots/vivek_06_homepage.png)
+##### UI Description:<i> "a Simple minimalistic yet easyily understandable website landing page"</i>
 
 #### 2. NAVBAR
-[screenshot 2](./00_screenshots/vivek%2000_ss.png)
+![screenshot 2](./00_screenshots/vivek%2000_ss.png)
 ##### UI Description:<i> "A navigation menu is implemented to allow users to easily navigate between different sections of the website."</i>
 
+#### 3. FOOTER
+![screenshot 3](./00_screenshots/vivek%2005_footer.png)
+##### UI Description:<i> "A footer with all the necessary details, again showing simplicity & minimalistic yet easily navigabale design"</i>
 
-### 3. PANTHER PAGE
-[screenshot 3](./00_screenshots/vivek_02_ss.png)
+#### 4. HOMEPAGE RESPONSIVENESS
+![screenshot 4](./00_screenshots/vivek_07_homepage_responsive.png)
+##### UI Description:<i> "easy navigable homepage even for in small screen device"</i>
+
+#### 5. NAVBAR RESPONSIVENESS
+![screenshot 5](./00_screenshots/vivek_08_hamburger_clicked.png)
+##### UI Description:<i> "easily clickable & colorful navbar opened by clicking the hamburger menu"</i>
+
+#### 6. FOOTER RESPONSIVENESS
+![screenshot 6](./00_screenshots/vivek_09_footer_responsive.png)
+##### UI Description:<i> "easily clickable & colorful navbar opened by clicking the hamburger menu"</i>
+
+### 7. PANTHER PAGE
+![screenshot 7](./00_screenshots/vivek_02_ss.png)
 ##### UI Description:<i> "the webpage depicts the different items of the Panther class of jewellry"</i>
 
+### 8. RESPONSIVENESS PANTHER PAGES
+![screenshot 8](./00_screenshots/vivek_02_ss_responsive.png)
 
-### 4. RESPONSIVENESS
-[screenshot 4](./00_screenshots/vivek_02_ss_responsive.png)
+### 9. PERFUME PAGE
+![screenshot 9](./00_screenshots/vivek_10_perfume_page.png)
 
 
 
