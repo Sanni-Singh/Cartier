@@ -165,6 +165,23 @@ Throughout the development of our project, our team encountered various challeng
 
 ## :airplane:<span style="color:#29c4f6">WEBSITE UI 
 
+#### 1. HOME PAGE UI
+
+
+#### 2. NAVBAR
+[screenshot 2](./00_screenshots/vivek%2000_ss.png)
+##### UI Description:<i> "A navigation menu is implemented to allow users to easily navigate between different sections of the website."</i>
+
+
+### 3. PANTHER PAGE
+[screenshot 3](./00_screenshots/vivek_02_ss.png)
+##### UI Description:<i> "the webpage depicts the different items of the Panther class of jewellry"</i>
+
+
+### 4. RESPONSIVENESS
+[screenshot 4](./00_screenshots/vivek_02_ss_responsive.png)
+
+
 
 
 
