@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="04_styles.css">
+    <script src="https://kit.fontawesome.com/936f0e51ed.js" crossorigin="anonymous"></script>
+    <title>Flora and Fauna - High jewellery Cartier</title>
+</head>
+<body>
+    <header class="header">
+        <div class="heading">
+            <div class="heading-box1">
+                
+                <div class="burger">
+                    <div class="navigation">
+
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="navv" id="navv">
+                            <li><a href="" class="ankar">HIGH JEWELLERY</a></li>
+                            <li><a href="" class="ankar">JEWELLERY</a></li>
+                            <li><a href="" class="ankar">WATCHES</a></li>
+                            <li><a href="" class="ankar">BAGS AND ACCESSORIES</a></li>
+                            <li><a href="" class="ankar">FRAGRANCES</a></li>
+                            <li><a href="" class="ankar">ART OF LIVING</a></li>
+                            <li><a href="" class="ankar">NEWS</a></li>
+                            <li><a href="" class="ankar">LA MASION</a></li>
+                
+                        </ul>
+                    </div>
+                </div>
+
+                <ol>
+                    <li><a href="">INDIA</a></li>
+                    <li><a href="../../Home-Pages-Sanni(C)/contact.html">CONTACT US</a></li>
+                    <li><a href="../../Home-Pages-Sanni(C)/service.html">SERVICES</a></li>
+                </ol>
+            </div>
+            <div class="cartier-logo">
+                <a href="../../index.html"><img src="./imgOfHomePage/Cartier-logo.png" alt="cartier-logo"></a>
+            </div>
+            <div class="heading-box3">
+                <a href="../../Home-Pages-Sanni(C)/List.html"><img src="./iconOfHomePage/heart.svg" alt="heart"></a>
+                <a href="../../Home-Pages-Sanni(C)/profile.html"><img src="./iconOfHomePage/profile.svg" alt="profile"></a>
+                <a href=""><img src="./iconOfHomePage/map.svg" alt="map"></a>
+            </div>
+        </div>
+        <nav class="nav">
+            <ol>
+                <li><a href=""  class="a">HIGH JEWELLERY</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-high-jewell/01_All-creations/01_A_nature-sauvage.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw305a0b8e/MegaMenu/high-jewellery/latest-collections/nature-sauvage/NATURE_SAUVAGE_400x400.jpg" alt=""></a>
+                                </div>
+                                <a href="../../vivek-high-jewell/01_All-creations/01_A_nature-sauvage.html" class="b">NATURE SAUVAGE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-high-jewell/01_All-creations/01_panther.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwd777a46b/MegaMenu/HJ_2022/07_PIECES%20DISPO%20EN%20LIGNE/La%20panthere%20animal%20emblematique.png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-high-jewell/01_All-creations/01_panther.html" class="b">PANTHER</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-high-jewell/01_All-creations/02_indomptables.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw5951140f/MegaMenu/HJ_2022/07_PIECES%20DISPO%20EN%20LIGNE/HAUTE-JO_VIGNETTES_400x400_CAR_CRH6038815.png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-high-jewell/01_All-creations/02_indomptables.html" class="b">INDOMPTABLES</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-high-jewell/01_All-creations/03_le_voyage.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw1edfcbaf/MegaMenu/HJ_2022/le_voyage_recommence/Le%20Voyage%20Re_MM%20Thumbnail.png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-high-jewell/01_All-creations/03_le_voyage.html" class="b">LE VOVYAGE RECOMMENCE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-high-jewell/01_All-creations/04_flora-fauna.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw549c7a0b/MegaMenu/HJ_2022/02_EXPRESSIONS%20CREATIVES/HAUTE-JO_VIGNETTES_400x400_Faune_flore.png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-high-jewell/01_All-creations/04_flora-fauna.html" class="b">FLORA AND FAUNA</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-high-jewell/01_All-creations/05_geometry.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwf41645a3/MegaMenu/HJ_2022/02_EXPRESSIONS%20CREATIVES/HAUTE-JO_VIGNETTES_400x400_Geometrie_Contrastes.png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-high-jewell/01_All-creations/05_geometry.html" class="b">GEOMETRY AND CONTRASTS</a>
+                            </div>
+                        </div>
+                        <a href="../../vivek-high-jewell/01_All-creations/06_view-all.html" class="c">View All</a>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">JEWELLERY</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Jewellery/Collections/01_love.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw53c850fe/images/large/41bb20649b985d5ea6fc0a93c60b78e4.png?sw=350&sh=350&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../Jewellery/Collections/01_love.html" class="b">LOVE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Jewellery/Collections/02_juste.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwf2f6b74f/images/large/c8ce01516cc35b8798f2f190bb972baa.png?sw=350&sh=350&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../Jewellery/Collections/02_juste.html" class="b">JUSTE UN CLOU</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Jewellery/Collections/03_trinity.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw48faf790/images/large/3f00069935765b6c9ac4f393b27237f6.png?sw=350&sh=350&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../Jewellery/Collections/03_trinity.html" class="b">TRINITY</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Jewellery/Collections/04_panthere.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw5dbd251e/images/large/84654424155a57829dd987f7bae5402d.png?sw=350&sh=350&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../Jewellery/Collections/04_panthere.html" class="b">PANTHÈRE DE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Jewellery/Collections/05_grain.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw53768677/images/large/c0e9cbfed2925fa3ad11b8d1fc6f4b4c.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../Jewellery/Collections/05_grain.html" class="b">GRAIN DE CAFÉ</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Jewellery/Collections/06_clash.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1789a004/images/large/25cc5d0334a252168303c300d1902ede.png?sw=350&sh=350&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../Jewellery/Collections/06_clash.html" class="b">CLASH DE</a>
+                            </div>
+                        </div>
+                        <a href="../../Jewellery/Collections/view.html" class="c">View All</a>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">WATCHES</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Watches_ashutosh/Watches/01_Collections_tank.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw6d36b0b0/MegaMenu/watches/collections/tank/TANK_LC.jpg" alt=""></a>
+                                </div>
+                                <a href="../../Watches_ashutosh/Watches/01_Collections_tank.html" class="b">TANK</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Watches_ashutosh/Watches/02_Santos_de_cartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw57c9d522/4_Santos_Men.jpg" alt=""></a>
+                                </div>
+                                <a href="../../Watches_ashutosh/Watches/02_Santos_de_cartier.html" class="b">SANTOS DE CARTIER</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Watches_ashutosh/Watches/03_Panthere_de_cartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw2112ab8b/5_Panthere_de_Cartier.jpg" alt=""></a>
+                                </div>
+                                <a href="../../Watches_ashutosh/Watches/03_Panthere_de_cartier.html" class="b">PANTHER</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Watches_ashutosh/Watches/04_Ballon_de_cartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwc23a537b/3_Ballon_Men.jpg" alt=""></a>
+                                </div>
+                                <a href="../../Watches_ashutosh/Watches/04_Ballon_de_cartier.html" class="b">BALLON DE CARTIER</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Watches_ashutosh/Watches/05_Baignoire.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwea482f0d/MegaMenu/watches/collections/baignoire/VIGNETTE_400x400_BAIGNOIRE.jpg" alt=""></a>
+                                </div>
+                                <a href="../../Watches_ashutosh/Watches/05_Baignoire.html" class="b">BAIGNOIRE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../Watches_ashutosh/Watches/06_Refelection_de_cartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dweba9061e/MegaMenu/watches/collections/reflection/MM_thumbnail_Reflection.png" alt=""></a>
+                                </div>
+                                <a href="../../Watches_ashutosh/Watches/06_Refelection_de_cartier.html" class="b">REFELCTION DE CARTIER</a>
+                            </div>
+                        </div>
+                        <a href="../../Watches_ashutosh/Watches/07_View_all.html" class="c">View All</a>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">BAGS AND ACCESSORIES</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw883c54c5/images/large/ec6838d955bd5de5a59e576f5c02cfc9.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">TOP HANDLE BAGS</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw020cb6fb/images/large/61f48a9edc2956daaa64899da4d3a4e9.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">SHOULDER BAGS</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwcf02a6c8/images/large/4341a6cc9d015477adf38feb6002b55e.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">TOTE BAGS</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw8560dcc1/images/large/810569c369dc53c0b56c80c48600377c.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">Mini bags</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw48ea1b3b/images/large/fa0da4bd3588556fbb5cef1bdacdddbe.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">Evening bags</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw5a39f231/images/large/b58f9b499784541ead8dcaaf2dd43388.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">BUSINESS BAGS</a>
+                            </div>
+
+                        </div>
+                        <a href="" class="c">View All</a>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">FRAGRANCES</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../siddhant-fragrances/1lapanthere.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw4f60986f/MegaMenu/new-fragrance/fragrances/la-panthere/PANTHERE_PERFUME_400X400.jpg" alt=""></a>
+                                </div>
+                                <a href="../../siddhant-fragrances/1lapanthere.html" class="b">LA PANTHERE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../siddhant-fragrances/2déclaration.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw03d7f726/MegaMenu/new-fragrance/declaration/Declaration_MM.jpg" alt=""></a>
+                                </div>
+                                <a href="../../siddhant-fragrances/2déclaration.html" class="b">DECLARATION</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../siddhant-fragrances/3pashadecartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw86e7e5ac/MegaMenu/new-fragrance/pasha-de-cartier/NEW_CARTIER_PASCHA_VIGNETTE_400x400_2.jpg" alt=""></a>
+                                </div>
+                                <a href="../../siddhant-fragrances/3pashadecartier.html" class="b">PASHA DE CARTIER</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../siddhant-fragrances/4Baiservolé.HTML"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw3bc5e6bd/MegaMenu/new-fragrance/baiser-vole/VIGNETTE_400x400_MEGAMENU_BAISE_VOLE_V1.jpg" alt=""></a>
+                                </div>
+                                <a href="../../siddhant-fragrances/4Baiservolé.HTML" class="b">BAISER VOLE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../siddhant-fragrances/5rivièresdecartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwb499d8d2/MegaMenu/new-fragrance/rivieres-de-cartier/mens_fragrances_RIVIERES.png" alt=""></a>
+                                </div>
+                                <a href="../../siddhant-fragrances/5rivièresdecartier.html" class="b">RIVIERES DE CARTIER</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../siddhant-fragrances/6mustdecartier.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwc9f660c8/MegaMenu/new-fragrance/must-de-cartier/VIGNETTE_400x400_MUST_3.jpg" alt=""></a>
+                                </div>
+                                <a href="../../siddhant-fragrances/6mustdecartier.html" class="b">MUST DE CARTIER</a>
+                            </div>
+                        </div>
+                        <a href="../../siddhant-fragrances/fragrance.html" class="c">View All</a>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">ART OF LIVING</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+                            <!-- <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw53768677/images/large/c0e9cbfed2925fa3ad11b8d1fc6f4b4c.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">PANTHER</a>
+                            </div> -->
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../ArtOfLiving/Writing/01_writing.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwe7c789d9/MegaMenu/art-of-living/writing/ACCESSORIES_MEGAMENU_ACCESSORIES-WRITING-INSTRUMENTS.jpg" alt=""></a>
+                                </div>
+                                <a href="../../ArtOfLiving/Writing/01_writing.html" class="b">WRITING INSTRUMENTS</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../ArtOfLiving/Writing/02_books.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwf881fd21/MegaMenu/art-of-living/writing/OBJETS_MEGAMENU_NOTEBOOKS-AGENDA.jpg" alt=""></a>
+                                </div>
+                                <a href="../../ArtOfLiving/Writing/02_books.html" class="b">NOTEBOOKS & STATIONERY</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../ArtOfLiving/Writing/03_accessories.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw0fe794c2/MegaMenu/art-of-living/writing/OBJETS_MEGAMENU_DESK-ACCESSORIES.jpg" alt=""></a>
+                                </div>
+                                <a href="../../ArtOfLiving/Writing/03_accessories.html" class="b">DESK & OFFICE ACCESSORIES</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../ArtOfLiving/Writing/04_refills.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw40c509ab/MegaMenu/art-of-living/writing/VIGNETTE_400x400.jpg" alt=""></a>
+                                </div>
+                                <a href="../../ArtOfLiving/Writing/04_refills.html" class="b">PEN & REFILLS</a>
+                            </div>
+                            <!-- <div class="megabox">
+                                <div class="mega-image">
+                                    <a href=""><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw53768677/images/large/c0e9cbfed2925fa3ad11b8d1fc6f4b4c.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="" class="b">PANTHER</a>
+                            </div> -->
+                        </div>
+                        <a href="../../ArtOfLiving/Writing/view_all.html" class="c">View All</a>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">NEWS</a>
+                    <div class="megamenu">
+                        <div class="megaBoxess">
+                            <div class="megabox1">
+                                <h2>STORIES</h2>
+                                <a href="" class="b">NEWS</a>
+                                <a href="" class="b">CARTIER PARTY</a>
+                                <a href="" class="b">ENCOUNTER</a>
+                                <a href="" class="b">KNOW HOW</a>
+                                <a href="" class="b">THE MAISON</a>
+                                <a href="" class="b">ALL STORIES</a>
+                            </div>
+                            <div class="megabox2">
+                                <h2>COMMITMENTS AND CULTURE</h2>
+                                <a href="" class="b">FONDATION CARTIER POUR L'ART CONTEMPORAIN</a>
+                                <a href="" class="b">CARITER COLLECTION</a>
+                                <a href="" class="b">ENCOUNTERS</a>
+                                <a href="" class="b">CARTIER WOMEN'S INITIATIVE</a>
+                                <a href="" class="b">MUSICAL COMMITMENT</a>
+                                <a href="" class="b">CARTIER PHILANTHROPY</a>
+                                <a href="" class="b">COMMITMENT TO OUR PEOPLE</a>
+                                <a href="" class="b">All COMMITMENTS AND CULTURE</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="" class="a">LA MAISON</a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-LaMasion/01_ballon-bleu.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dw63a3aabc/MegaMenu/maison_2022/01_culture_design/MAISON_thumbnail_DESIGN_ballonbleu.jpg" alt=""></a>
+                                </div>
+                                <a href="../../vivek-LaMasion/01_ballon-bleu.html" class="b">BALLON BLEU</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-LaMasion/02_tank.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw38821174/images/large/2d86cdcd9936569ea9b4d1ec1b1a5aab.png?sw=350&sh=350&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-LaMasion/02_tank.html" class="b">TANK</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-LaMasion/03-Trinity.html"><img src="https://www.cartier.com/on/demandware.static/-/Sites-cartier-storefront-IND/default/dwd55e0122/MegaMenu/maison_2022/01_culture_design/MAISON_thumbnail_DESIGN_trinity.jpg" alt=""></a>
+                                </div>
+                                <a href="../../vivek-LaMasion/03-Trinity.html" class="b">TRINITY</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-LaMasion/05_santos.html"><img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwe777b519/images/large/4781b79ac6f15fc1a1599899ccf84668.png?sw=750&sh=750&sm=fit&sfrm=png" alt=""></a>
+                                </div>
+                                <a href="../../vivek-LaMasion/05_santos.html" class="b">SANTOS</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-LaMasion/04-love.html"><img src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibraryAESA-BGTJ/default/dwb018a140/clp/2022/love/04-side-module-picture-img-0-data.jpg" alt=""></a>
+                                </div>
+                                <a href="../../vivek-LaMasion/04-love.html" class="b">LOVE</a>
+                            </div>
+
+                            <div class="megabox">
+                                <div class="mega-image">
+                                    <a href="../../vivek-LaMasion/06_Juste-un-clou.html"><img src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibraryAESA-BGTJ/default/dwf7aa6663/images/Jewellery/juste-un-clou/04_Icons_CLP_juc_STATIC.jpg" alt=""></a>
+                                </div>
+                                <a href="../../vivek-LaMasion/06_Juste-un-clou.html" class="b">JUSTE</a>
+                            </div>
+                        </div>
+                        <a href="../../vivek-LaMasion/07_view-all.html" class="c">View All</a>
+                    </div>
+                </li>
+
+                <div class="hr"></div>
+                <li><a href=""><img src="./iconOfHomePage/search.svg" alt=""></a>
+                    <div class="megamenu">
+                        <div class="megaBoxes">
+                                <div class="subscribe">
+                                        <form action="">
+                                            <input type="email" name="" id="" placeholder="Email">
+                                            <button>SUBSCRIBE</button>
+                                        </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="main-content">
+
+        <section class="banner">
+            <div class="banner-img">
+                <img src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibraryAESA-BGTJ/default/dw58927566/HEADERS-1920px-par-800px-HJ-NEW-FAUNE-ET-FLORE-V2.jpg" alt="banner-image">
+            </div>
+            <div class="banner-text">
+                <div class="text">
+                    <h2>Flora & Fauna</h2>
+                    <p>There is nothing romantic or sweet when it comes to nature at Cartier, instead it is a unique and liberated vision of femininity. We will be pleased to welcome you in our selected boutiques for personal advice or any queries on High Jewellery creations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="toolbar">
+            <div class="left">
+                <a href="../../index.html">Home / </a>
+                <a href="./01_A_nature-sauvage.html">high jewellery /  </a> <br>
+                <a href="./06_view-all.html">all creations/</a> <br>
+                <a href="">flora and fauna</a>
+            </div>
+            <div class="middle"> <p>16 Models</p></div>
+            <div class="right">
+                <div>
+                    <span> GRID</span>
+                    <img src="../00_assets/grid-icon.svg" alt="grid icon"> 
+                </div>
+
+                <div>
+                    <span> feed</span>
+                    <img src="../00_assets/check-box.svg" alt="checkbox">   
+                </div>
+                
+            </div>
+        </section>
+        <section class="hidden-toolbar">
+            <div class="option">filter by</div>
+            <div class="option">sort by</div>
+        </section>
+
+        <section class="jewell-section">
+            <div class="sidebar">
+
+                <div class="sort-by choice">
+                    <h4>SORT BY</h4>
+                    <input type="radio" name="sort" id="lo-to-hi">
+                    <label class="ip" for="lo-to-hi">PRICE LOW TO HIGH</label> <br>
+                    <input type="radio" name="sort" id="hi-to-lo">
+                    <label class="ip" for="hi-to-lo">PRICE HIGH TO LOW</label> <br>
+                    <input type="radio" name="sort" id="recommended">
+                    <label class="ip" for="recommended">RECOMMENDED</label>
+                </div>
+
+                <div class="filter-by choice">
+                    <h4>FILTER BY</h4>
+                    <input type="checkbox" name="filter" id="filter">
+                    <label for="filter">AVAILABLE ONLINE</label> <br>
+                    <input type="checkbox" name="filter" id="new">
+                    <label for="new">NEW</label> <br>
+                </div>
+
+                <div class="category choice">
+                    <h4>CATEGORY</h4>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">BRACELET</label> <br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">BROOCHES</label> <br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">EARRINGSS</label> <br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">NECKLACE</label> <br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2">RINGS</label> <br>
+                    
+                </div>
+
+
+                <div class="sap-visible choice">
+                    <h4>COLLECTION</h4>
+                    <input type="checkbox" id="true-1" name="vehicle1" value="Bike">
+                    <label for="true-1">PANTHÈRE DE CARTIER</label> <br>
+                    <input type="checkbox" id="true-1" name="vehicle1" value="Bike">
+                    <label for="true-1">HIGH JEWELRY</label> <br>
+                </div>
+
+                <div class="sap-visible choice">
+                    <h4>SAP OS VISIBLE WEB</h4>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1">TRUE</label> <br>
+                </div>
+
+                <div class="collection choice">
+                    <h4>LOCAL SELLABILITY</h4>
+                    <input type="checkbox" id="vehicle-1" name="vehicle-1" value="Bike">
+                    <label for="vehicle-1">FALSE</label> <br>
+                    <input type="checkbox" id="vehicle-2" name="vehicle1" value="Bike">
+                    <label for="vehicle-2">TRUE</label> <br>
+                   
+                </div>
+
+                <div class="in-stock choice">
+                    <h4>IN STOCK</h4>
+                    <input type="checkbox" id="v-1" name="vehicle1" value="Bike">
+                    <label for="v-1">TRUE</label> <br>
+                </div>
+            
+            </div>
+
+            <div class="grid-tiger">
+
+                <div class="grid-layout">
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwbb321965/images/large/c2fe45e1d12b5d28ab904d5817ddaf74.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Cactus de Cartier ring</h4>
+                            <p>Yellow gold, emeralds, carnelians, diamonds</p><br>
+                            <h4>INR 7,100,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwe77cfdcd/images/large/a547d45189fb5e03a48be89c1c9bc28b.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Cartier Fauna and Flora Necklace</h4>
+                            <p>White gold, emeralds, diamonds</p><br>
+                            <h4>INR 12,730,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw935b1d7b/images/large/07fc96d1ac3151f8abceb0dd34ab1e39.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Panthère de Cartier necklace</h4>
+                            <p>White gold, onyx, emerald, diamonds.</p><br>
+                            <h4>INR 12,400,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw01f0fdf5/images/large/64c8b4ffcae259b5b6c533ef77ab27b0.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">>
+                        </div>
+                        <div class="card-text">
+                            <h4>Yellow gold, emeralds, rubies, diamonds</h4>
+                            <p>Yellow gold, emeralds, rubies, diamonds</p><br>
+                            <h4>INR 10,500,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw75df14bd/images/large/8bf54f3ff28e5f3593cc43e9d7cbe7d5.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Panthère de cartier bracelet</h4>
+                            <p>White gold, emerald, sapphire, onyx, diamonds</p><br>
+                            <h4>INR 32,800,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw73c8d706/images/large/3b53488e9001511d9c0364c5b220c5b9.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Exceptional clock with artistically crafted eggshell mosaic</h4>
+                            <p>Sterling silver, palladium-finish details</p><br>
+                            <h4>INR 5,950,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+    
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47fe33a9/images/large/f911d2c2f419579a964602b0f1daf3a1.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">>
+                        </div>
+                        <div class="card-text">
+                            <h4>Panthère de cartier bracelet</h4>
+                            <p>White gold, coral, onyx, emeralds, diamonds</p><br>
+                            <h4>INR 28,800,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card space">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwe57af9f4/images/large/351e3b3419fc5484afdbd98961edfe28.png?sw=2000&sh=2000&sm=fit&sfrm=png" alt="Baby-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Diamond Collection bracelet</h4>
+                            <p>Bracelet, 18K white gold (750/1000), set with 9 pear-shaped diamonds totaling 1.12 carats, with 9 baguette-cut diamonds totaling 0.59 carats and with 108 brilliant-cut diamonds totaling 6.30 carats.</p><br>
+                        </div>
+                        <!-- <Button class="btn">Discover</Button> -->
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwb6424d34/images/large/637425931273114093-1179570.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>High Jewelry object</h4>
+                            <p>White gold, agate, diamonds</p><br>
+                            <h4>INR 269,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card graphic">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw0a4c67a4/images/large/3b07dbb7c7785d5386fa7ebba179194c.png?sw=350&sh=350&sm=fit&sfrm=png" alt="Baby-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>GRAPHIC PANTHER</h4>
+                            <p>The graphic and geometric treatment in black and white of the panther's coat inspires powerful pieces today. Whether it is a realistic three-dimensional approach or a planar design, the exercise is always to recreate the living spirit, and to capture movement.</p>
+                        </div>
+                        <!-- <Button class="btn">Discover</Button> -->
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwe297434e/images/large/373ea96938a051fca7e8d997ca3b5338.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Indomptables de Cartier Watch </h4>
+                            <p>22.2 mm, quartz movement, yellow gold, diamonds, emerald</p><br>
+                            <h4>INR 25,300,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw6641eb90/images/large/f273a546d12b59f4be621ad8ee2ce609.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Animal Jewelry Watch</h4>
+                            <p>Quartz movement, white gold, sapphires, emeralds, diamonds</p><br>
+                            <h4>INR 15,400,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw090fa1b2/images/large/8a28cfec11f354749b94279c1ea4481e.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>
+                                [Sur]naturel earrings
+                            </h4>
+                            <p>Rose gold, gray mother-of-pearl, coral, diamonds</p>
+                            <h4>INR 24,830,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw6de77de0/images/large/641268643692570ab4f520612d8bfd9a.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>
+                                Diamond Collection Earrings
+                            </h4>
+                            <p>White gold, diamonds</p><br>
+                            <h4>INR 23,020,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw61352b2b/images/large/981372eadef15f7da2855767c08dc0e2.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>
+                                [Sur]naturel necklace
+                            </h4>
+                            <p>White gold, emerald, onyx, diamonds</p><br>
+                            <h4>INR 44,100,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwda2dec49/images/large/d46bc2dd426f5dcca6c9ae4d7fab0096.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Panthère de Cartier tie pin</h4>
+                            <p>White gold, emeralds, onyx, diamonds</p><br>
+                            <h4>INR 830,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw74a53979/images/large/1feaf2c01f4851daa1ec6709ca09dde8.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Panthère Jewelry Watch</h4>
+                            <p>Quartz movement, white gold, emeralds, diamonds, leather</p><br>
+                            <h4>INR 13,300,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="jewell-img">
+                            <img src="https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw5fce494a/images/large/ab8e25766a6c5fe7ac7514d6f5bb2def.png?sw=350&sh=350&sm=fit&sfrm=png" alt="BRACELET-IMAGE">
+                        </div>
+                        <div class="card-text">
+                            <h4>Solitaire board with panther motif</h4>
+                            <p>Varnished resin and blown glass</p><br>
+                            <h4>INR 260,000</h4>
+                        </div>
+                        <Button class="btn">Discover</Button>
+                    </div>
+
+                </div>
+
+                <div class="tiger">
+                    <img src="https://www.cartier.com/on/demandware.static/Sites-CartierIND-Site/-/default/dw341a7b00/images/panthereCartierImageTransparent.png" alt="">
+                    <p>showing 16 out of 16 items</p>
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="subscribe-details">
+                <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                <form action="">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <button>SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="footer-main-details">
+                <div class="footer-main-box">
+                    <h3>CUSTOMER CARE</h3>
+                    <div class="footer-main-box-content">
+                        <a href="">CONTACT US</a>
+                        <a href="">CALL NOW: +91 11 4678 8888</a>
+                        <a href="">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-main-box">
+                    <h3>OUR COMPANY</h3>
+                    <div class="footer-main-box-content">
+                        <a href="">FIND A BOUTIQUE</a>
+                        <a href="">CAREERS</a>
+                        <a href="">CARTIER AND CORPORATE SOCIAL RESPONSIBILITY</a>
+                    </div>
+                </div>
+                <div class="footer-main-box">
+                    <h3>LEGAL AREA</h3>
+                    <div class="footer-main-box-content">
+                        <a href="">TERMS OF USE</a>
+                        <a href="">PRIVACY POLICY</a>
+                        <a href="">CONDITIONS OF SALE</a>
+                        <a href="">CREDITS</a>
+                    </div>
+                </div>
+                <div class="footer-main-box">
+                    <h3>FOLLOW US</h3>
+                    <div class="footer-main-box-content-icon">
+                        <a href=""><i class="fa-brands fa-instagram doremon"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f doremon"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter doremon"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube doremon"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest-p doremon"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp doremon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <div class="footer-logo-box">
+                    <div class="footer-logo1 imghover">
+                        <a href=""><img src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibraryAESA-BGTJ/default/dw72bdc242/CWI-Logo-black-424x190px.png" alt=""></a>
+                    </div>
+                    <div class="footer-logo2 imghover">
+                        <a href=""><img src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibraryAESA-BGTJ/default/dwb6205530/cartier_partner_logo_fondation.png" alt=""></a>
+                    </div>
+                    <div class="footer-logo3 imghover">
+                        <a href=""><img src="https://www.cartier.com/on/demandware.static/-/Library-Sites-CartierSharedLibraryAESA-BGTJ/default/dwf2c0b177/Philanthropy.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end">
+            <div class="footer-end-box">
+                <div class="footer-end-box1">
+                    <p>SHOP IN: INDIA</p>
+                    <a href="">Change Country</a>
+                </div>
+                <div class="footer-end-box2">
+                    <p>Copyright © 2024 Cartier</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../../home.js"></script>
+</body>
+</html>

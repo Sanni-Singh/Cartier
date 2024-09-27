@@ -10,6 +10,12 @@ body{
 .main-container{
     max-width:1920px;
 }
+
+
+
+/* Start coping from hererhe thilll last */
+
+/* --------------------------------------------------------------- */
 .footer{
     width: 100%;
     margin-top: 80px;
@@ -45,7 +51,7 @@ body{
                 }
 
                 input:focus{
-                    border: none;
+                    outline: none;
                 }
                 button{
                     padding: 10px;

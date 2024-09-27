@@ -1,0 +1,155 @@
+@media (max-width: 1050px) {
+    .section-1 {
+        flex-direction: column; 
+        text-align: start; 
+        img {
+            width: auto;
+        }
+    }
+
+    .text {
+        width: 100%;
+        padding: 10px; 
+    }
+
+    .text p {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        padding: 10px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidenav {
+        justify-content: center; 
+        margin-top: 10px;
+    }
+    
+    .last {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .oneline {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .oneline{
+        ul {
+            padding-right: 60px;
+        }
+
+        li {
+            padding: 0 5%;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+
+    .aside-details {
+        gap: 8px; 
+    }
+
+    .aside-details a {
+        font-size: 14px;
+    }
+
+    .aside-details h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+  }
+
+  
+  @media (max-width: 768px) { 
+    .aside {
+        display: none;
+        padding: 10px;
+    }
+    .main-content {
+      grid-template-columns: 1fr;
+    }
+
+    .watch {
+        margin-left: -100px;
+    }
+  }
+
+  @media (max-width: 768px) { /* Adjust the max-width as necessary */
+    .tig {
+        margin-left: 0; /* Remove left margin */
+        margin-right: auto; /* Center horizontally */
+        margin-left: auto; /* Center horizontally */
+        width: 100%; /* Make it take full width */
+        padding: 0 10px; /* Optional: add some padding */
+    }
+}
+ 
+/* Make adjustments for the YouTube video wrapper */
+@media (max-width: 1024px) {
+    .youtube-wrapper {
+        grid-column: 2; /* Position YouTube video in the second column */
+        grid-row: 2; /* Ensure it stays in the second row */
+    }
+
+    .youtube-wrapper2 {
+        grid-column: 2; /* Position YouTube video in the second column */
+        grid-row: 2; /* Ensure it stays in the second row */
+    }
+}
+
+@media (max-width: 768px) { 
+    .oneline {
+        transform: translate(-7%);
+    }
+    .main-content {
+        grid-template-columns: 1fr; 
+        transform: translateX(-23%);
+    }
+
+    .youtube-wrapper {
+        grid-column: 1 / -1; /* Ensures the YouTube video takes the full row */
+        margin-bottom: 10px; /* Decrease gap below the YouTube video */
+    }
+    .youtube-wrapper2 {
+        grid-column: 1 / -1; /* Ensures the YouTube video takes the full row */
+        margin-bottom: 10px; /* Decrease gap below the YouTube video */
+    }
+
+    .watch-large {
+        grid-column: 1 / -1; /* Ensures the large watch takes the full row as well */
+        margin-top: 5px; /* Add a small margin above the watch if needed */
+    }
+
+    .watch {
+        margin-left: 0; /* Reset margins */
+        width: 100%; /* Makes each watch take the full width */
+    }
+
+    .text {
+        width: 100%; /* Ensures text elements take full width */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}
+
