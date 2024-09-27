@@ -7,17 +7,17 @@
 
 Click Here To Clone of Cartier Website 😉
 
-## Table of Contents
+### <span style="color:#29c4f6"> <u>Table of Contents:</u>
 
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Team Members](#team-members)
-- [Mentor](#mentor)
-- [Usage](#usage)
-- [Responsive Design](#responsive-design)
-- [License](#license)
-- [learnings]
+1. [INTRODUCTION](#🏅-introduction)
+2. [FEATURES](#🛰️Features)
+3. [TECHNOLOGIES](#💻technologies)
+4. [INSTALLATION](#📲installation)
+5. [CHALLENGES](#🎢challenges)
+6. [REFERENCES](#📚references)
+7. [WEBSITE UI](#✈️website-ui)
+8. [LICENSE](#🔗license)
+9. [CONCLUSION](#1-communication)
 
 ## Features
 
@@ -127,13 +127,25 @@ Throughout the development of our project, our team encountered various challeng
 
 ## :airplane:<span style="color:#29c4f6">WEBSITE UI 
 
+
+
+
+## LEARNINGS
+### 1. Understanding User Requirements
+- Clearly defined user requirements at the beginning led to a more focused development process.
+### 2. Agile Development
+- Embracing an agile development approach allowed for flexibility in adapting to changing project needs.
+### 3. Collaboration and Communication
+- Effective comminication within the tean and regular collaboration meetings improved overall project coordination.
+### 4. Technology
+- Experimenting with HTML, CSS & Javascript provided valuable insights into its benefits and limitations.
+### 5. Problem Solving
+- Encountering and solving errors enhanced problem-solving skills among team members.
+
 ## Mentor
 
 We were guided by **SWARAJ ANAND**, who provided invaluable feedback, code reviews, and advice on responsive design and web development best practices. The mentor's involvement helped us follow industry standards and improve our technical skills.
 
-## Usage
-
-Once the project is opened in a browser, you can navigate through various pages of the website, view product listings, and experience a fully responsive design. Resize your browser or open the website on different devices to test the responsive behavior.
 
 ## Responsive Design
 
@@ -143,6 +155,13 @@ The website was developed with a mobile-first approach and features responsive b
 - Desktops: 1024px and above
 The layout adapts seamlessly across these devices to maintain optimal user experience.
 
-## License
+## :link:<span style="color:#29c4f6">LICENSE
 
-This project is for educational purposes only and is not intended for commercial use. The original design and content belong to Cartier.
+<ul>
+<li>There is no license for this project as it is created under major project @Geekster. 
+<li>You are free to use and modify the code based on your requirements.
+<li>This project is for educational purposes only and is not intended for commercial use. The original design and content belong to Cartier.
+</ul>
+
+
+## :hourglass_flowing_sand:<span style="color:#29c4f6">CONCLUSION
