@@ -1,8 +1,5 @@
 # CARTIER WEBSITE CLONE (BETA VERSION)
 
-## Overview
-
-- This project is a fully responsive clone of the Cartier website, created using HTML and CSS. The clone aims to replicate the design and user experience of the original Cartier website, ensuring it is mobile-friendly and accessible across devices. The project was developed by a team of four passionate developers under the guidance of a mentor.
 
 
 Clone of Cartier Website 😉 [Click Here](https://sanni-singh.github.io/Cartier/)
@@ -18,6 +15,8 @@ Clone of Cartier Website 😉 [Click Here](https://sanni-singh.github.io/Cartier
 7. [WEBSITE UI](#✈️website-ui)
 8. [LICENSE](#🔗license)
 9. [CONCLUSION](#1-communication)
+
+## :medal_sports:<span style="color:#29c4f6"> INTRODUCTION
 
 ## Features
 
