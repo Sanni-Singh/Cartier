@@ -26,21 +26,45 @@ Click Here To Clone of Cartier Website 😉
 - HTML and CSS-based development for fast performance and compatibility
 - Consistent styling and alignment across different browsers
 
-## Technologies Used
+## :dart:<span style="color:#29c4f6">PROJECT 
+This project was assigned by <a href="#"><u>Geekster</u></a> as a Major Project for a team of 6 members :juggling_person: regarding Front-end web development.
+    <ul type=none>
+    <li>:sparkles:Sanni Kumar (CAPTAIN)
+    <li>:sparkles: Vivek Nag
+    <li>:sparkles:Junaid
+     <li>:sparkles:Ashutosh Kumar
+     <li>:sparkles:Siddhant Mishra
+     <li>:sparkles:Komal Verma
+   </ul>
 
-- **HTML5**: For structuring content
-- **CSS3**: For styling and layout, including Flexbox and Grid for responsiveness
-- **Responsive Design**: Mobile-first approach for optimal viewing on all devices
+:gift: It was an exciting opportunity for all of us to apply our skills and collaborate with each other to create a polished website.:earth_asia:
 
-## Team Members
 
-This project was collaboratively developed by a team of five, each contributing to different sections of the website and its overall design.
+## :computer:<span style="color:#29c4f6">TECHNOLOGIES  
+[![My Skills](https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev)
+ #### <span style="color:#ef00ff">1. HTML  
+<ul>HTML is a programming language which is used for structuring web Pages including headers, navigation bars, content sections, and footers. </ul>
 
-- **SANNI KUMAR** – Worked on the homepage header & footer responsiveness along with few other pages like contact us, services.
-- **JUNAID** – Focused on .
-- **ASHUTOSH** – Responsible for .
-- **KOMAL VERMA** – Managed .
-- **VIVEK NAG** – Managed .
+ #### <span style="color:#ef00ff">2. CSS  
+<ul>Applied for styling and layout with different CSS properties </ul>
+
+#### <span style="color:#ef00ff">3. JAVASCRIPT 
+<ul>JavaScript is a dynamic programming language that is used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.</ul>
+
+ #### <span style="color:#ef00ff">4. FONT AWESOME 
+<ul>Font Awesome is a comprehensive icon library that offers a vast selection of icons for various purposes, such as user interface design, web development and graphic design.
+
+ #### <span style="color:yellow">Usage:</span>
+<ul>
+<li><u>Include the CSS</u>: Add the Font Awesome CSS stylesheet to your HTML document by including a link in the section.
+<li><u>Add Icons</u>: Insert icons into your HTML using the element with the appropriate class. Customize their appearance using CSS.
+<li><u>Customize Icons</u>: You can modify icons' size, color, and alignment by adding extra classes and applying CSS styles.
+<li><u>Explore Icons</u>: Visit the Font Awesome website or documentation to find the icons that suit your project's needs.</ul></ul>
+
+#### <span style="color:#ef00ff">5. GOOGLE FONTS AND ICONS
+<ul>Google Fonts is a free and extensive collection of web fonts that allows developers to easily integrate diverse and visually appealing fonts into their websites. With a simple inclusion of a link or stylesheet in the HTML, users can access a wide range of fonts hosted by Google.</ul>
+
+<ul>Google Icons, on the other hand, are typically referenced from the Material Design Icons library. These are vector icons that can be easily customized and scaled for use in web and mobile applications. Developers can integrate these icons into their projects by including the appropriate link or script in the HTML.</ul>
 
 ## Mentor
 
