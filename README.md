@@ -2,7 +2,7 @@
 
 
 
-Clone of Cartier Website 😉 [Click Here](https://sanni-singh.github.io/Cartier/)
+Clone of Cartier Website 😉 [Click Here](https://lnkd.in/gygMrD8D)
 
 ### <span style="color:#29c4f6"> <u>Table of Contents:</u>
 
